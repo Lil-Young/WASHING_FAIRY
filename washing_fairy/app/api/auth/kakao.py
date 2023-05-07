@@ -26,7 +26,7 @@ def kakao_oauth_api(
     if 'id' not in kakao_user:
         return unauthorized('invalid_request')
 
-    # Get SESCO User Info
+    # Get WASHING User Info
     model = User(current_app.db)
     user = model.get_password_with_id(
         f"kakao_{kakao_user['id']}"

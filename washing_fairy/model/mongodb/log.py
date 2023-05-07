@@ -2,7 +2,7 @@ from datetime import datetime
 from pymongo import IndexModel, DESCENDING, ASCENDING
 from .base import Model
 
-
+# 로그는 앱에서 발생하는 이벤트나 작업에 대한 정보를 기록한 데이터
 class Log(Model):
 
     VERSION = 1

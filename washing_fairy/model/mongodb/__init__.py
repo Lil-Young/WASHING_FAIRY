@@ -41,7 +41,7 @@ class ModelInitializer:
     @staticmethod
     def init_author(cur):
         """Insert Author config"""
-        MasterConfig(cur).insert_author('SESCO')
+        MasterConfig(cur).insert_author('WASHING')
 
     @staticmethod
     def init_hello(cur):

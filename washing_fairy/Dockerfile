@@ -4,8 +4,8 @@ ENV FLASK_APP=manage:application
 ENV FLASK_CONFIG=production
 ENV FLASK_ENV=production
 
-COPY ./ /home/Sesco-Server/
-WORKDIR /home/Sesco-Server/
+COPY ./ /home/Washing-Server/
+WORKDIR /home/Washing-Server/
 
 RUN pip install --upgrade pip && \
 	pip install -r requirements.txt

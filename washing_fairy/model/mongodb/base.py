@@ -3,13 +3,13 @@ from datetime import datetime
 from pymongo import MongoClient
 from config import config
 
-
+# metaclass=ABCMeta를 사용하여 Model 클래스를 추상 클래스로 선언
 class Model(metaclass=ABCMeta):
 
     VERSION = 1
 
     def __init__(self, client: MongoClient, db_name=config.MONGODB_NAME):
-        self.col = client[db_name][self.__class__.__name__]
+        self.col = client[db_name][self.__class__.__name__] # class 이름으로 된 컬렉션에 연결
 
     @property
     def index(self) -> list:

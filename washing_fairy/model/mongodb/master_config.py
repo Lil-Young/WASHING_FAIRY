@@ -2,6 +2,7 @@ from datetime import datetime
 from .base import Model
 import json
 
+# 앱의 전반적인 설정 정보를 저장하고 관리하는 데이터
 class MasterConfig(Model):
 
     VERSION = 1

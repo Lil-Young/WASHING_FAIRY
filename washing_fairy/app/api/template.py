@@ -8,5 +8,5 @@ template = Blueprint('template', __name__)
 
 @template.route('/')
 def index():
-    return "<h1>Welcome to SESCO.</h1>"
+    return "<h1>Welcome to WASHING.</h1>"
 
