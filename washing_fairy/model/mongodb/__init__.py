@@ -8,7 +8,6 @@ MODELS = [
     Log, MasterConfig, User
 ]
 
-
 def get_cursor(uri=config.MONGODB_URI) -> MongoClient:
     """Get MongoDB Cursor"""
     return MongoClient(uri, connect=False)

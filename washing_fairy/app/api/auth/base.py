@@ -14,6 +14,7 @@ from config import config
 from . import api_auth as api
 from datetime import timedelta
 from config import Config
+
 @api.post('/signin')
 @Validator(bad_request)
 @timer
